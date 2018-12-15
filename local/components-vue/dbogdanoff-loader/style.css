@@ -1,0 +1,20 @@
+.dbogdanoff-loader {
+  z-index: 10000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  user-select: none; }
+  .dbogdanoff-loader--showed {
+    display: flex; }
+
+.dbogdanoff-loader__icon {
+  width: 166px;
+  height: 166px; }
+
+/*# sourceMappingURL=style.css.map */
