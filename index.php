@@ -57,4 +57,10 @@ var mainVueApp = new Vue({
 })
 </script>
 
+<style>
+[v-cloak] {
+  display: none;
+}
+</style>
+
 <? require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/footer.php'); ?>

@@ -17,7 +17,7 @@ Vue.component('block-header', {
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("/assets/bg-paraglider.jpg") center 80%;
   background-size: cover;
-  height: 500px;
+  height: 560px;
   color: white;
 }
 </style>
