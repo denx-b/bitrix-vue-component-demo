@@ -52,7 +52,8 @@ var mainVueApp = new Vue({
     }
   },
   mounted: function () {
-    AOS.init()
+    AOS.init();
+    Vue.use(VTooltip)
   }
 })
 </script>
