@@ -15,18 +15,28 @@
 <script>
 Vue.component('carousel', {
   template: '#carousel',
-  props: {
-    items: {
-      default: function () { return {} },
-      required: false
+  data: function () {
+    return {
+      items: []
     }
   },
   mounted: function () {
-    new Flickity(this.$refs.carousel, {
-      wrapAround: true,
-      imagesLoaded: true,
-      percentPosition: false,
-      prevNextButtons: false
+    var $this = this;
+
+    axios.get('/api/slider.json')
+    .then(function (response) {
+      $this.items = response.data
+    })
+    .then(function () {
+      new Flickity($this.$refs.carousel, {
+        wrapAround: true,
+        imagesLoaded: true,
+        percentPosition: false,
+        prevNextButtons: false
+      })
+    })
+    .catch(function (error) {
+      console.log(error)
     })
   },
   methods: {

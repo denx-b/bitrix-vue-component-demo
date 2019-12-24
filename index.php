@@ -1,6 +1,9 @@
-<?
+<?php
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
 $APPLICATION->SetTitle('Bitrix Vue Component');
+?>
+
+<?php
 \Dbogdanoff\Bitrix\Vue::includeComponent([
     'block-header',
     'block-footer',
@@ -13,7 +16,7 @@ $APPLICATION->SetTitle('Bitrix Vue Component');
 
 <main id="app" v-cloak>
   <block-header></block-header>
-  <carousel v-bind:items="sliderItems"></carousel>
+  <carousel></carousel>
   <simple-block add-class="p-5">
     <h5>Text block</h5>
   </simple-block>
@@ -31,24 +34,7 @@ var mainVueApp = new Vue({
   name: 'root',
   data: function () {
     return {
-      loader: false,
-      sliderItems: [
-        {
-          src: '/assets/slider/1.jpg'
-        },
-        {
-          src: '/assets/slider/2.jpg'
-        },
-        {
-          src: '/assets/slider/3.jpg'
-        },
-        {
-          src: '/assets/slider/4.jpg'
-        },
-        {
-          src: '/assets/slider/5.jpg'
-        }
-      ]
+      loader: false
     }
   },
   mounted: function () {
