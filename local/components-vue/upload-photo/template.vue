@@ -11,23 +11,3 @@
   </div>
 </div>
 </template>
-
-<style>
-.upload-photo__img {
-  width: 100%;
-  max-width: 250px;
-  min-height: 250px;
-  border: 2px dashed;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.upload-photo__img:hover {
-  color: #9eafbf;
-}
-
-.upload-photo__img img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-</style>
