@@ -49,7 +49,7 @@ Vue.component('upload-photo', {
 
       var $this = this
 
-      axios.get('/local/tools/ajax/fake-upload.php')
+      axios.get('/api/upload/')
       .then(function (response) {
         $this.$emit('change', false)
 
