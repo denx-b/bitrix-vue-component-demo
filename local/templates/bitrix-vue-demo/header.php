@@ -1,10 +1,12 @@
-<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
+<?php
+
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
+}
 
 /** @var CMain $APPLICATION */
 
-use Bitrix\Main\Localization\Loc,
-    Bitrix\Main\Page\Asset;
+use Bitrix\Main\Localization\Loc;use Bitrix\Main\Page\Asset;
 
 Loc::loadMessages(__FILE__);
 
@@ -23,9 +25,9 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/js/vtooltip.js');
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/css/vtooltip.css');
 Asset::getInstance()->addString('<meta name="viewport" content="width=device-width,initial-scale=1">');
 ?><!doctype html>
-<html lang="<?=LANGUAGE_ID?>">
+<html lang="<?= LANGUAGE_ID ?>">
 <head>
-<title><?$APPLICATION->ShowTitle()?></title>
-<?$APPLICATION->ShowHead();?>
+    <title><?php $APPLICATION->ShowTitle() ?></title>
+    <?php $APPLICATION->ShowHead() ?>
 </head>
 <body>

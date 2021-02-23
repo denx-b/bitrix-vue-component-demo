@@ -1,0 +1,5 @@
+{
+    "require": {
+        "denx-b/bitrix-vue-component": "^1.1"
+    }
+}

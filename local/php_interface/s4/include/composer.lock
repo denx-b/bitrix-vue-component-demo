@@ -1,0 +1,54 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "552de7f7a9b245d8ae729bb4cab9a5f3",
+    "packages": [
+        {
+            "name": "denx-b/bitrix-vue-component",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/denx-b/bitrix-vue-component.git",
+                "reference": "e2b4aabbb29c9a027490fbc87ef16bd7622dc097"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/denx-b/bitrix-vue-component/zipball/e2b4aabbb29c9a027490fbc87ef16bd7622dc097",
+                "reference": "e2b4aabbb29c9a027490fbc87ef16bd7622dc097",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dbogdanoff\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Connecting vue components in the bitrix",
+            "support": {
+                "issues": "https://github.com/denx-b/bitrix-vue-component/issues",
+                "source": "https://github.com/denx-b/bitrix-vue-component/tree/1.1.0"
+            },
+            "time": "2022-03-19T17:22:30+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}

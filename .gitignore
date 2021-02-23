@@ -1,10 +1,7 @@
-/.idea/
+/.idea
 /bitrix
-
-/local/test
+/local/php_interface/s4/include/vendor
 /upload
-/test.php
-
 /*.txt
 *.css.map
 *.js.map
